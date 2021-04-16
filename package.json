@@ -1,0 +1,22 @@
+
+{
+  "name": "tailwindcss-crash",
+  "version": "2.0.3",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build tailwind.css -o tailcss.css"
+  
+  },
+  
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.7",
+    "tailwindcss": "^2.0.3"
+  },
+
+  
+  "dependencies": {
+    "tailwind": "^4.0.0"
+  }
+}
