@@ -331,7 +331,6 @@ header{
     background-color: #edeef7;
     margin-top: 2rem;
     padding-bottom: 1.2rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     border-top-right-radius: -50% -40%;
     border-top-left-radius: -50% -40%;
     margin: auto;
@@ -343,6 +342,7 @@ header{
     margin: auto;
     padding-bottom: 1.5rem;
     width: 70%;
+    text-align: center;
 }
 
 .port-prof{
@@ -370,34 +370,32 @@ header{
 }
 
 .port-profile{
-    margin: auto;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding-top: 1.5rem;
-    min-width: 30%;
 }
 .portclass{
     background-color: white;
     padding: 1.5rem 2rem;
     border-radius: 10px 0 10px 0;
     text-align: center;
-    width: 100%;
     padding-bottom: 1rem;
     margin-right: 3%;
     overflow: hidden;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.portfolio-img{
+.portclass img{
     margin: auto;
     background-position: center;
     background-repeat: no-repeat;    
     display: block;
     padding-bottom: 1rem;
+    width: 80%;
+    height: 50%;
     border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.39);
 }
 
 .portclass h1{
@@ -433,7 +431,7 @@ header{
 .form-deco{
     margin: auto;    
     padding: 1rem;
-    width: 40%;
+    width: 60%;
     padding-bottom:5%;
     border-radius: 0 20px 0 20px ;
     display: grid;
@@ -646,7 +644,7 @@ footer{
 
     }
     .boxes{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
         width: 80%;
     }
 }
@@ -673,7 +671,20 @@ footer{
 }
 
 
-
+@media (max-width:600px){
+    .port-profile{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .boxes{
+        grid-template-columns: 1fr;
+        width: 60%;
+    }
+}
+@media (max-width:450px){
+    .port-profile{
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
